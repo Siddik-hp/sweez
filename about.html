@@ -1,0 +1,253 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/image/favicon.ico" />
+    <title>Sweez | About</title>
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Css link -->
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+
+  <body>
+    <!-- top header -->
+    <section id="top_header" class="container-fluid">
+      <div
+        class="container py-3 d-flex justify-content-between align-items-center"
+      >
+        <div class="left">
+          <a href="/">
+            <figure>
+              <img src="./image/Logo/sweez_2000.png" alt="" class="img-fluid" />
+            </figure>
+          </a>
+        </div>
+        <div
+          class="d-flex justify-content-around w-100 gap-3 header_details_responsive"
+        >
+          <div class="middle d-flex justify-content-between gap-4">
+            <div class="d-flex align-items-center gap-2">
+              <div>
+                <i class="fa-solid fa-location-dot fa-3x"></i>
+              </div>
+              <div>
+                <h4>Kamarpara, Uttara</h4>
+                <h6>Uttara 1230, Bangladesh</h6>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div>
+                <i class="fa-solid fa-clock fa-3x"></i>
+              </div>
+              <div>
+                <h4>11:00AM - 5:00PM</h4>
+                <h6>Saturday - Wednesday</h6>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div>
+                <i class="fa-solid fa-message fa-3x"></i>
+              </div>
+              <div>
+                <h4>Online 24/7</h4>
+                <h6>+888 01621675233</h6>
+              </div>
+            </div>
+          </div>
+          <div class="right d-flex gap-2 justify-content-between gap-4">
+            <a href="#">
+              <i class="fa-brands fa-twitter fa-3x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook fa-3x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram-square fa-3x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex gap-4 header_icon">
+          <i class="fas fa-bars fa-3x" onclick="ShowMenu()"></i>
+          <i class="fa-solid fa-circle-info fa-3x" onclick="showDetails()"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Bar -->
+    <nav class="navbar container-fluid navbar-expand py-3">
+      <div class="container">
+        <i class="fas fa-times fa-3x" onclick="HideMenu()"></i>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul
+                class="dropdown-menu shadow-lg"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="/services.html"
+                    >Graphics Design</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services.html"
+                    >Android App Development</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services.html"
+                    >Web Design and Development</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services.html"
+                    >Video Editing</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services.html"
+                    >Digital Marketing</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services.html"
+                    >Support / IT</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#Contact_Section">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid mt-5">
+      <div class="row container mx-auto g-4">
+        <div class="col-md-6 col-12">
+          <figure>
+            <a href="/">
+              <img
+                src="./image/Logo/sweez_2000.png"
+                class="img-fluid w-25"
+                alt=""
+              />
+            </a>
+          </figure>
+          <ul>
+            <li><a href="#">Kamarpara, Uttara, Dhaka 1230</a></li>
+            <li><a href="#">contact@sweez.ltd</a></li>
+            <li><a href="#">(+880)1866504071</a></li>
+            <li><a href="#">www.sweez.xyz</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-12 mx-auto">
+          <ul>
+            <h2>Services</h2>
+            <li><a href="#">Graphics Design</a></li>
+            <li><a href="#">Android App Development</a></li>
+            <li><a href="#">Web Design and Development</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Support / IT</a></li>
+          </ul>
+        </div>
+        <div class="row footer_icon g-4 mx-auto">
+          <div class="col-md-4">
+            <h4>© 2022 <span>Sweez.ltd</span> . All Rights Reserved</h4>
+          </div>
+          <div
+            class="col-md-3 mx-auto justify-content-between d-flex align-items-center"
+          >
+            <a href="#">
+              <i class="fa-brands fa-twitter fa-3x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook fa-3x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram-square fa-3x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1645008089">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </footer>
+
+    <script defer="" src="./js/Main.js"></script>
+    <!-- Bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Counter Script -->
+  </body>
+  <!-- Main Js -->
+</html>
